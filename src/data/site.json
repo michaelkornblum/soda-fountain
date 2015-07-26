@@ -1,0 +1,28 @@
+{
+  "title" : "site title",
+  "author" : {
+    "name" : "your name",
+    "email" : "your email",
+    "facebook" : "your facebook info",
+    "twitter" : "your twitter info",
+    "linkedIn" : "your linkedIn info",
+    "github" : "your github info"
+  },
+  "description" : "site description",
+  "stylesheets" : [
+    "styles/style.css"
+  ],
+  "pages" : [
+    {
+      "title" : "Home",
+      "href" : "index.html"
+    },
+    {
+      "title" : "About",
+      "href" : "about.html"
+    }
+  ],
+  "scripts" : [
+    "scripts/script.js"
+  ]
+}
