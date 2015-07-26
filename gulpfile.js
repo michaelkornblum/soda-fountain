@@ -1,8 +1,10 @@
-var harmonize = require('harmonize')();
+// load gulp and metalsmith modules
 var gulp = require('gulp');
 var $g = require('gulp-load-plugins')();
 var gulpsmith = require('gulpsmith');
 var $m = require('load-metalsmith-plugins')();
+// load miscelleneous modules
+var harmonize = require('harmonize')();
 var assign = require('lodash.assign');
 var moment = require('moment');
 
