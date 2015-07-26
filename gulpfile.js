@@ -1,8 +1,10 @@
+var harmonize = require('harmonize')();
 var gulp = require('gulp');
 var $g = require('gulp-load-plugins')();
 var gulpsmith = require('gulpsmith');
 var $m = require('load-metalsmith-plugins')();
 var assign = require('lodash.assign');
+var moment = require('moment');
 
 gulp.task('metalsmith', function() {
   return gulp.src('./src/**/*')
