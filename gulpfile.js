@@ -7,6 +7,8 @@ var $m = require('load-metalsmith-plugins')();
 var harmonize = require('harmonize')();
 var assign = require('lodash.assign');
 var moment = require('moment');
+// load postcss plugins
+var poststylus = require('poststylus');
 
 gulp.task('metalsmith', function() {
   return gulp.src('./src/**/*')
@@ -34,4 +36,19 @@ gulp.task('metalsmith', function() {
       .use($m.beautify())
     )
     .pipe(gulp.dest('./build'));
+});
+
+gulp.task('styles', function() {
+  gulp.src('styles/style.styl')
+    .pipe($g.stylus({
+      use: [
+        poststylus([
+          'autoprefixer',
+          'postcss-position',
+          'postcss-vertical-rhythm',
+          'lost'
+        ])
+      ]
+    }))
+    .pipe(gulp.dest('./build/styles'));
 });

@@ -17,14 +17,17 @@
   },
   "homepage": "https://github.com/MichaelKornblum/gulp-metalsmith-builder",
   "devDependencies": {
+    "autoprefixer": "^5.2.0",
     "gulp": "^3.9.0",
     "gulp-front-matter": "^1.2.3",
     "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-stylus": "^2.0.5",
     "gulpsmith": "^0.5.5",
     "harmonize": "^1.4.4",
     "jade": "^1.11.0",
     "load-metalsmith-plugins": "^0.1.1",
     "lodash.assign": "^3.2.0",
+    "lost": "^6.5.0",
     "metalsmith": "^2.0.1",
     "metalsmith-beautify": "0.0.7",
     "metalsmith-copy": "^0.2.1",
@@ -32,6 +35,9 @@
     "metalsmith-layouts": "^1.2.1",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-metadata": "0.0.1",
-    "moment": "^2.10.3"
+    "moment": "^2.10.3",
+    "postcss-position": "^0.2.1",
+    "postcss-vertical-rhythm": "^1.1.2",
+    "poststylus": "^0.2.0"
   }
 }
