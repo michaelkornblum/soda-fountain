@@ -1,0 +1,17 @@
+{
+  "name": "gulp-metalsmith-builder",
+  "version": "1.0.0",
+  "homepage": "https://github.com/MichaelKornblum/gulp-metalsmith-builder",
+  "authors": [
+    "Michael Kornblum <mkornblum71@gmail.com>"
+  ],
+  "description": "a full-service build system based on Gulp, Metalsmith and assorted plugins",
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
