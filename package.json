@@ -18,10 +18,14 @@
   "homepage": "https://github.com/MichaelKornblum/gulp-metalsmith-builder",
   "devDependencies": {
     "autoprefixer": "^5.2.0",
+    "browserify": "^11.0.0",
+    "coffeeify": "^1.1.0",
     "gulp": "^3.9.0",
     "gulp-front-matter": "^1.2.3",
     "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-streamify": "0.0.5",
     "gulp-stylus": "^2.0.5",
+    "gulp-uglify": "^1.2.0",
     "gulpsmith": "^0.5.5",
     "harmonize": "^1.4.4",
     "jade": "^1.11.0",
@@ -38,6 +42,8 @@
     "moment": "^2.10.3",
     "postcss-position": "^0.2.1",
     "postcss-vertical-rhythm": "^1.1.2",
-    "poststylus": "^0.2.0"
+    "poststylus": "^0.2.0",
+    "vinyl-source-stream": "^1.1.0",
+    "vinyl-transform": "^1.0.0"
   }
 }

@@ -9,6 +9,11 @@ var assign = require('lodash.assign');
 var moment = require('moment');
 // load postcss plugins
 var poststylus = require('poststylus');
+// load coffeescript/vinyl plugins
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+var transform = require('vinyl-transform');
+var coffeeify = require('coffeeify');
 
 gulp.task('metalsmith', function() {
   return gulp.src('./src/**/*')
@@ -51,4 +56,13 @@ gulp.task('styles', function() {
       ]
     }))
     .pipe(gulp.dest('./build/styles'));
+});
+
+gulp.task('scripts', function() {
+  return browserify('./scripts/script.coffee')
+    .transform(coffeeify)
+    .bundle()
+    .pipe(source('script.js'))
+    .pipe($g.streamify($g.uglify()))
+    .pipe(gulp.dest('./build/scripts'));
 });
