@@ -14,6 +14,7 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var transform = require('vinyl-transform');
 var coffeeify = require('coffeeify');
+var jadeify = require('jadeify');
 
 gulp.task('metalsmith', function() {
   return gulp.src('./src/**/*')
@@ -60,6 +61,7 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
   return browserify('./scripts/script.coffee')
+    .transform(jadeify)
     .transform(coffeeify)
     .bundle()
     .pipe(source('script.js'))
