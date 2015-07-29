@@ -45,6 +45,7 @@
     "postcss-position": "^0.2.1",
     "postcss-vertical-rhythm": "^1.1.2",
     "poststylus": "^0.2.0",
+    "stream-browserify": "^2.0.0",
     "vinyl-source-stream": "^1.1.0",
     "vinyl-transform": "^1.0.0"
   }
