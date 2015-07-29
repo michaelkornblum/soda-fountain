@@ -16,6 +16,7 @@ var transform = require('vinyl-transform');
 var coffeeify = require('coffeeify');
 var jadeify = require('jadeify');
 
+// generate html pages from metalsmith plugins
 gulp.task('metalsmith', function() {
   return gulp.src('./src/**/*')
     .pipe($g.frontMatter()).on("data", function(file){
@@ -44,6 +45,7 @@ gulp.task('metalsmith', function() {
     .pipe(gulp.dest('./build'));
 });
 
+// compile css with stylus and postcss plugins
 gulp.task('styles', function() {
   gulp.src('styles/style.styl')
     .pipe($g.stylus({
@@ -59,6 +61,7 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('./build/styles'));
 });
 
+// compile javascript from coffeescript and node modules with // browserify
 gulp.task('scripts', function() {
   return browserify('./scripts/script.coffee')
     .transform(jadeify)
@@ -67,4 +70,15 @@ gulp.task('scripts', function() {
     .pipe(source('script.js'))
     .pipe($g.streamify($g.uglify()))
     .pipe(gulp.dest('./build/scripts'));
+});
+
+// optimize images
+gulp.task('images', function() {
+  return gulp.src('./images/*')
+    .pipe($g.imagemin({
+      optimizationLevel: 3,
+      progressive: true,
+      interlaced: true
+    }))
+    .pipe(gulp.dest('./build/images'));
 });
