@@ -82,3 +82,11 @@ gulp.task('images', function() {
     }))
     .pipe(gulp.dest('./build/images'));
 });
+
+gulp.task('vectors', function() {
+  return gulp.src('./vectors/*.svg')
+    .pipe($g.svgSymbols({
+      templates: ['default-svg']
+    }))
+    .pipe(gulp.dest('./layouts/templates/partials'));
+});
