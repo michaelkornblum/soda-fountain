@@ -9,6 +9,8 @@ var assign = require('lodash.assign');
 var moment = require('moment');
 // load postcss plugins
 var poststylus = require('poststylus');
+// load browser-sync
+var browserSync = require('browser-sync').create();
 // load coffeescript/vinyl plugins
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
@@ -83,10 +85,20 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./build/images'));
 });
 
+// process svg symbols
 gulp.task('vectors', function() {
   return gulp.src('./vectors/*.svg')
     .pipe($g.svgSymbols({
       templates: ['default-svg']
     }))
     .pipe(gulp.dest('./layouts/templates/partials'));
+});
+
+//initialize browser-sync server
+gulp.task('serve', function() {
+  browserSync.init({
+    server : {
+      baseDir : './build'
+    }
+  });
 });
