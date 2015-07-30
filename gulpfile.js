@@ -7,6 +7,8 @@ var $m = require('load-metalsmith-plugins')();
 var harmonize = require('harmonize')();
 var assign = require('lodash.assign');
 var moment = require('moment');
+var del = require('del');
+var runSequence = require('run-sequence');
 // load postcss plugins
 var poststylus = require('poststylus');
 // load browser-sync
@@ -94,11 +96,34 @@ gulp.task('vectors', function() {
     .pipe(gulp.dest('./layouts/templates/partials'));
 });
 
-//initialize browser-sync server
+// clear build directory
+gulp.task('clean', function(cb) {
+  del([
+    './build/**/*',
+  ], cb);
+});
+
+// initialize browser-sync server
 gulp.task('serve', function() {
   browserSync.init({
     server : {
       baseDir : './build'
     }
   });
+});
+
+// start default task
+gulp.task('default', function(callback) {
+  runSequence('clean', 'vectors', ['metalsmith', 'styles', 'scripts', 'images'], 'serve', 'watch');
+});
+
+// watch files for changes
+gulp.task('watch', function() {
+  gulp.watch('src/**/*', ['metalsmith']);
+  gulp.watch('layouts/**/*', ['metalsmith']);
+  gulp.watch('styles/**/*', ['styles']);
+  gulp.watch('scripts/**/*', ['scripts']);
+  gulp.watch('images/**/*', ['images']);
+  gulp.watch('vectors/**/*', ['vectors']);
+  gulp.watch('build/**/*', browserSync.reload);
 });
