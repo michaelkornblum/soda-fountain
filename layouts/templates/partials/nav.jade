@@ -1,6 +1,6 @@
 nav.main-nav(id="main-nav")
   ul
-    for i in site.pages
+    for i in pages.pages
       li
         if i.title == title
           a.active(href=i.href)=i.title

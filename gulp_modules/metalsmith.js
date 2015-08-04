@@ -13,7 +13,8 @@ module.exports = function(gulp, $g) {
       })
       .pipe(gulpsmith()
         .use($m.metadata({
-          site: "data/site.json"
+          site: "data/site.json",
+          pages: "data/pages.json"
         }))
         .use($m.markdown())
         .use($m.inPlace({

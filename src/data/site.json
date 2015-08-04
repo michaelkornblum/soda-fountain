@@ -1,18 +1,10 @@
 {
-  "title" : "Gulp-Metalsmith-Builder",
-  "author" : {
-    "name" : "Michael Kornblum",
-    "email" : "mkornblum71@gmail.com"
-  },
-  "description" : "a static build system using Gulp and Metalsmith",
-  "pages" : [
-    {
-      "title" : "Home",
-      "href" : "index.html"
-    },
-    {
-      "title" : "About",
-      "href" : "about.html"
-    }
-  ]
+ "title": "michaelkornblum.com",
+ "description": "my portfolio site",
+ "author": "Michael Kornblum",
+ "email": "mkornblum71@gmail.com",
+ "publication": "Github Pages",
+ "gh-repo": "https://github.com/MichaelKornblum/michaelkornblum.git",
+ "gh-user": "MichaelKornblum",
+ "gh-email": "mkornblum71@gmail.com"
 }
