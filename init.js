@@ -35,7 +35,7 @@ var questions = [
   },
   {
     type: 'input',
-    name: 'gh-repo',
+    name: 'ghRepo',
     message: 'Github Repo:',
     when: function(answers) {
       return answers.publication === 'Github Pages';
@@ -43,23 +43,7 @@ var questions = [
   },
   {
     type: 'input',
-    name: 'gh-user',
-    message: 'Github Username:',
-    when: function(answers) {
-      return answers.publication === 'Github Pages';
-    }
-  },
-  {
-    type: 'input',
-    name: 'gh-email',
-    message: 'Github Email:',
-    when: function(answers) {
-      return answers.publication === 'Github Pages'
-    }
-  },
-  {
-    type: 'input',
-    name: 'ftp-server',
+    name: 'ftpServer',
     message: 'FTP Server',
     when: function(answers) {
       return answers.publication === 'FTP Server';
