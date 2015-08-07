@@ -3,6 +3,7 @@ var fs = require('fs');
 var gulp = require('gulp');
 var $g = require('gulp-load-plugins')();
 var browserSync = require('browser-sync').create();
+var ftp = require('vinyl-ftp');
 
 // bring in config file
 var config = JSON.parse(fs.readFileSync('./src/data/site.json'));
@@ -33,8 +34,11 @@ require('./gulp_modules/serve.js')(gulp, browserSync);
 // utilty task to watch files
 require('./gulp_modules/watch.js')(gulp, browserSync);
 
-// utility tasks to deploy to github pages
-require('./gulp_modules/deploy.js')(gulp, $g, config);
+// utility task to deploy to github pages
+require('./gulp_modules/deploy-git.js')(gulp, $g, config);
+
+// utility task to deploy ftp site
+require('./gulp_modules/deploy-ftp.js')(gulp, $g, config);
 
 // default gulp task
 require('./gulp_modules/default.js')(gulp);
