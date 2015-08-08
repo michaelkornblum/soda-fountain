@@ -1,8 +1,11 @@
 {
- "title": "michaelkornblum",
- "description": "The blog / portfolio site by Michael Kornblum",
+ "title": "a Fistful of Booleans",
+ "description": "the blog / portfolio site of Michael Kornblum",
  "author": "Michael Kornblum",
  "email": "mkornblum71@gmail.com",
- "publication": "Github Pages",
- "ghRepo": "https://github.com/michaelkornblum/michaelkornblum.git"
+ "gitRepo": "https://github.com/michaelkornblum/michaelkornblum.git",
+ "ftpHost": "198.199.82.77",
+ "ftpUser": "michael",
+ "ftpPass": "squirrel71",
+ "ftpBaseDir": "/home/michael/michaelkornblum.com"
 }

@@ -24,30 +24,29 @@ var questions = [
     message: 'Author Email:'
   },
   {
-    type: 'list',
-    name: 'publication',
-    message: 'Publication Method:',
-    choices: [
-      'Github Pages',
-      'FTP Server',
-      'None'
-    ]
+    type: 'input',
+    name: 'gitRepo',
+    message: 'Git Repo:'
   },
   {
     type: 'input',
-    name: 'ghRepo',
-    message: 'Github Repo:',
-    when: function(answers) {
-      return answers.publication === 'Github Pages';
-    }
+    name: 'ftpHost',
+    message: 'FTP Host:'
   },
   {
     type: 'input',
-    name: 'ftpServer',
-    message: 'FTP Server',
-    when: function(answers) {
-      return answers.publication === 'FTP Server';
-    }
+    name: 'ftpUser',
+    message: 'FTP User Name:'
+  },
+  {
+    type: 'password',
+    name: 'ftpPass',
+    message: 'FTP Password:'
+  },
+  {
+    type: 'input',
+    name: 'ftpBaseDir',
+    message: 'FTP Base Directory:'
   }
 ]
 
