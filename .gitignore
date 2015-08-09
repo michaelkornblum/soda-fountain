@@ -33,3 +33,4 @@ svg-symbols.svg
 # Misc
 .DS_Store
 config.json
+.publish
