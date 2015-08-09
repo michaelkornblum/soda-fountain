@@ -32,4 +32,4 @@ svg-symbols.svg
 
 # Misc
 .DS_Store
-src/data/site.json
+config.json

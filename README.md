@@ -10,7 +10,7 @@ Thank you for your interest in **Soda-Fountain**, a static site build system tha
 
 - Static build systems should be modular, allowing you to add, remove and configure components as you see fit.
 
-To achieve these goals, Soda-Fountain makes ample use of Gulp, the most popular and well documented streaming build system on the web and Metalsmith, a rising star in the world of Static Site Generators. Both tools provide a rich ecosystem of plugins that makes creating the website you want a snap.
+To achieve these goals Soda-Fountain makes ample use of Gulp, the most popular and well documented streaming build system on the web and Metalsmith, a rising star in the world of Static Site Generators. Both tools provide a rich ecosystem of plugins that makes creating the website you want a breeze.
 
 With Soda-Fountain and a little know-how, it's possible to create anything from simple blogs and portfolios to larger, data-driven sites that resemble a more traditional CMS.
 
@@ -20,7 +20,7 @@ In order to install Soda-Fountain you must have two packages already installed a
 - Node.js
 - Gulp
 
-**Note:** At the time of this writing, Soda-Fountain has not been tested on a PC running Windows. This however, is a high ranking item on my to do list and the situation will be fixed soon.
+**Note:** At the time of this writing, Soda-Fountain has not been tested on a PC running Windows. This however will change very soon.
 
 ### Install Node.js
 For Mac users, installing Node.js is easy. Just go to the [Node.js website](https://nodejs.org/) and download the package that's appropriate to your operating system of choice. For Ubuntu users the latest version of Node.js is available via PPA. See [this article](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server) from Digital Ocean for details.
@@ -30,18 +30,18 @@ Once Node.js is installed, it's easy to install Gulp. Open your terminal emulato
 
 ```sudo npm install -g gulp```
 
-You will be asked for your administrative password. Once your password is provided, Node's package manager (npm) will download and install Gulp.
+You will be asked for your administrative password. Once your password is provided Node's package manager (npm) will download and install Gulp.
 
 ### Clone or Download Soda-Fountain
 From the command-line enter:
- ```git clone https://github.com/michaelkornblum/soda-fountain``` to clone Soda-Fountain to a local repository. Alternately, Soda-Fountain can be downloaded as a zip file from [here](https://github.com/michaelkornblum/soda-fountain/archive/master.zip). Use your command-line or graphical front-end tool of choice to unzip the downloaded file.
+ ```git clone https://github.com/michaelkornblum/soda-fountain``` to clone Soda-Fountain to a local repository. Alternately Soda-Fountain can be downloaded as a zip file from [here](https://github.com/michaelkornblum/soda-fountain/archive/master.zip). Use your command-line or graphical front-end tool of choice to unzip the newly downloaded file before proceeding to the next step.
 
 ### Install Remaining Dependencies
-From the command-line, change your current working directory so you are now working inside the newly cloned repository or extracted zip file.
+From the command-line change your current working directory so you inside the newly cloned repository or extracted zip file.
 
 ```cd path/to/soda-fountain```
 
-Next, use the Node Package Manager to download and intall the remaining dependencies. From the command-line, enter:
+Next use the Node Package Manager to download and intall the remaining dependencies. From the command-line enter:
 
 ```sudo npm install```
 
