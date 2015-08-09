@@ -3,13 +3,11 @@ var fs = require('fs');
 var gulp = require('gulp');
 var $g = require('gulp-load-plugins')();
 var browserSync = require('browser-sync').create();
-var ftp = require('vinyl-ftp');
 
-// bring in config file
-var config = JSON.parse(fs.readFileSync('./src/data/site.json'));
+// bring in site deployment file
+var config = JSON.parse(fs.readFileSync('./config.json'));
 
 // GULP TASKS
-
 // compile HTML with Metalsmith
 require('./gulp_modules/metalsmith.js')(gulp, $g);
 

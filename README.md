@@ -48,3 +48,6 @@ Next use the Node Package Manager to download and intall the remaining dependenc
 Once again, you will be asked for your administrative password and npm will download the packages needed to make Soda-Fountain work.
 
 **Note:** Soda-Fountain uses over 35 Node packages in order to do its magic. As a result the downloading and installation of these dependencies may take some time. Please be patient.
+
+### Start init.js
+Once the remaining Node packages have been installed, its time to answer a few questions. These questions are used to build some of the more redundant parts of your website. To make the process as easy as possible, Soda-Fountain comes with a small Node script that is based on [inquirer.js](https://github.com/SBoudrias/Inquirer.js/) so you can enter this information directly from the command line. Just run ```node init.js``` and fill out the short questionnaire that follows. Once all the questions have been answered, a new file named ```site.json``` will be created in your ```/src/data``` directory. The ```site.json``` file is used by many templates in Soda-Fountain to create the head, header and footer sections of your website.
