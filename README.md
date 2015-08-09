@@ -36,7 +36,7 @@ You will be asked for your administrative password. Once your password is provid
 From the command-line enter:
  ```git clone https://github.com/michaelkornblum/soda-fountain``` to clone Soda-Fountain to a local repository. Alternately, Soda-Fountain can be downloaded as a zip file from [here](https://github.com/michaelkornblum/soda-fountain/archive/master.zip). Use your command-line or graphical front-end tool of choice to unzip the downloaded file.
 
- ### Install Remaining Dependencies
+### Install Remaining Dependencies
 From the command-line, change your current working directory so you are now working inside the newly cloned repository or extracted zip file.
 
 ```cd path/to/soda-fountain```
