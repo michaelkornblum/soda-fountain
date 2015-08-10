@@ -5,7 +5,11 @@ var $g = require('gulp-load-plugins')();
 var browserSync = require('browser-sync').create();
 
 // bring in site deployment file
-var config = JSON.parse(fs.readFileSync('./config.json'));
+try {
+  var config = JSON.parse(fs.readFileSync('./config.json'));
+} catch(err) {
+  var config = {};
+}
 
 // GULP TASKS
 // compile HTML with Metalsmith
