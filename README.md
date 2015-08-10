@@ -22,21 +22,21 @@ In order to install Soda-Fountain you must have two packages already installed a
 
 **Note:** At the time of this writing, Soda-Fountain has not been tested on a PC running Windows. This however will change very soon.
 
-### Install Node.js
+### 1. Install Node.js
 For Mac users, installing Node.js is easy. Just go to the [Node.js website](https://nodejs.org/) and download the package that's appropriate to your operating system of choice. For Ubuntu users the latest version of Node.js is available via PPA. See [this article](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server) from Digital Ocean for details.
 
-### Install Gulp
+### 2. Install Gulp
 Once Node.js is installed, it's easy to install Gulp. Open your terminal emulator and enter:
 
 ```sudo npm install -g gulp```
 
 You will be asked for your administrative password. Once your password is provided Node's package manager (npm) will download and install Gulp.
 
-### Clone or Download Soda-Fountain
+### 3. Clone or Download Soda-Fountain
 From the command-line enter:
  ```git clone https://github.com/michaelkornblum/soda-fountain``` to clone Soda-Fountain to a local repository. Alternately Soda-Fountain can be downloaded as a zip file from [here](https://github.com/michaelkornblum/soda-fountain/archive/master.zip). Use your command-line or graphical front-end tool of choice to unzip the newly downloaded file before proceeding to the next step.
 
-### Install Remaining Dependencies
+### 4. Install Remaining Dependencies
 From the command-line change your current working directory so you inside the newly cloned repository or extracted zip file.
 
 ```cd path/to/soda-fountain```
@@ -49,7 +49,7 @@ Once again, you will be asked for your administrative password and npm will down
 
 **Note:** Soda-Fountain uses over 35 Node packages in order to do its magic. As a result the downloading and installation of these dependencies may take some time. Please be patient.
 
-### Start init.js
-Once the remaining Node packages have been installed, its time to answer a few questions. These questions are used to build some of the more redundant parts of your website. To make the process as easy as possible, Soda-Fountain comes with a small Node script that is based on [inquirer.js](https://github.com/SBoudrias/Inquirer.js/) so you can enter this information directly from the command line.
+### 5. Start init.js
+Init.js is a small Node script that is based on [inquirer.js](https://github.com/SBoudrias/Inquirer.js/). Its purpose is to provide soda-fountain basic information about your website. This information is saved in the ```site.json``` file located in your ```src/data``` directory. To start init.js run ```node init.js``` from your command-line. The script will ask you a series of questions. Once these questions have been answered, init.js will output a brief congratulatory message indicating that the information you entered is ready for use by the rest of the application.
 
-To complete this step, run ```node init.js``` and fill out the short questionnaire that follows. Once all the questions have been answered, a new file named ```site.json``` will be created in your ```/src/data``` directory. The ```site.json``` file is used by the Soda-Fountain's Jade templating engine to create the head, header and footer sections of your website.
+### 6. Start browser-sync
