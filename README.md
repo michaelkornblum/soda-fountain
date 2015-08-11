@@ -57,8 +57,10 @@ Init.js is a small Node script that is based on [inquirer.js](https://github.com
 Init.js will ask you a series of questions. Once these questions have been answered, init.js will output a brief congratulatory message indicating that the information you entered is ready for use.
 
 ### 6. Start Gulp Server
-Soda-Fountain is now ready for its initial run. From the command-line, enter:
+Soda-Fountain is ready for its initial run. From the command-line, enter:
 
 ```gulp serve```
 
 Soda-Fountain will use Gulp to run through a series of build and maintenance tasks. Finally it will start an instance of [browser-sync](http://www.browsersync.io/), a live, cross-browser testing environment. Soda-Fountiain is now ready for use. Continue on to the next section to learn how to use it to create the site of your dreams.
+
+## Understanding Static Build Systems
