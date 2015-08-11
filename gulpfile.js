@@ -31,16 +31,19 @@ require('./gulp_modules/vectors.js')(gulp, $g);
 require('./gulp_modules/clean.js')(gulp);
 
 // utlilty task to start browswer-sync server
-require('./gulp_modules/serve.js')(gulp, browserSync);
+require('./gulp_modules/start-server.js')(gulp, browserSync);
 
 // utilty task to watch files
 require('./gulp_modules/watch.js')(gulp, browserSync);
 
-// utility task to deploy to github pages
+// deploy to github pages
 require('./gulp_modules/deploy-git.js')(gulp, $g, config);
 
-// utility task to deploy ftp site
+// deploy ftp site
 require('./gulp_modules/deploy-ftp.js')(gulp, $g, config);
 
-// default gulp task
+// start development server
+require('./gulp_modules/serve.js')(gulp);
+
+// default build task
 require('./gulp_modules/default.js')(gulp);

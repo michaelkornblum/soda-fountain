@@ -1,9 +1,6 @@
-module.exports = function(gulp, browserSync) {
+var runSequence = require('run-sequence');
+module.exports = function(gulp) {
   gulp.task('serve', function() {
-    browserSync.init({
-      server : {
-        baseDir : './build'
-      }
-    });
+    runSequence('clean', 'vectors', ['metalsmith', 'styles', 'scripts', 'images'], 'start-server', 'watch');
   });
 }

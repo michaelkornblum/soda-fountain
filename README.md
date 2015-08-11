@@ -50,6 +50,15 @@ Once again, you will be asked for your administrative password and npm will down
 **Note:** Soda-Fountain uses over 35 Node packages in order to do its magic. As a result the downloading and installation of these dependencies may take some time. Please be patient.
 
 ### 5. Start init.js
-Init.js is a small Node script that is based on [inquirer.js](https://github.com/SBoudrias/Inquirer.js/). Its purpose is to provide soda-fountain basic information about your website. This information is saved in the ```site.json``` file located in your ```src/data``` directory. To start init.js run ```node init.js``` from your command-line. The script will ask you a series of questions. Once these questions have been answered, init.js will output a brief congratulatory message indicating that the information you entered is ready for use by the rest of the application.
+Init.js is a small Node script that is based on [inquirer.js](https://github.com/SBoudrias/Inquirer.js/). Its purpose is to provide soda-fountain with some basic information about your website. This information is saved in the ```site.json``` file located in your ```src/data``` directory. From the command-line, enter:
 
-### 6. Start browser-sync
+```node init.js```
+
+Init.js will ask you a series of questions. Once these questions have been answered, init.js will output a brief congratulatory message indicating that the information you entered is ready for use.
+
+### 6. Start Gulp Server
+Soda-Fountain is now ready for its initial run. From the command-line, enter:
+
+```gulp serve```
+
+Soda-Fountain will use Gulp to run through a series of build and maintenance tasks. Finally it will start an instance of [browser-sync](http://www.browsersync.io/), a live, cross-browser testing environment. Soda-Fountiain is now ready for use. Continue on to the next section to learn how to use it to create the site of your dreams.
