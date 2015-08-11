@@ -64,7 +64,7 @@ Soda-Fountain is ready for its initial run. From the command-line, enter:
 Soda-Fountain will use Gulp to run through a series of build and maintenance tasks. Finally it will start an instance of [browser-sync](http://www.browsersync.io/), a live, cross-browser testing environment. Soda-Fountiain is now ready for use. Continue on to the next section to learn how to use it to create the site of your dreams.
 
 ## Understanding Static Build Systems
-A **static site generator** is a powerful software tool that builds websites without forcing the user to manually create a new HTML document for each webpage. To accomplish this goal, it will often separate a website's structure from its content. This separation of concerns helps the user to quickly add content to a site without worrying about other aspects of website creation. Static site generators often consist of the following components:
+A **static site generator** is a powerful software tool that builds websites without forcing the user to manually create a new HTML document for each webpage. To accomplish this goal, it will often separate a website's structure from its content. This separation of concerns helps the user to quickly add content to a site without needing to worry about the website's overall structure. Static site generators often consist of the following components:
 
 - a Templating Engine
 - a Markdown Parser
