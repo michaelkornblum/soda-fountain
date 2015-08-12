@@ -1,6 +1,6 @@
 {
- "title": "a Fistful of Booleans",
- "description": "the personal blog / portfolio site of Michael Kornblum",
+ "title": "soda-fountain.org",
+ "description": "The official website for Soda-Fountain, a static build system based on Gulp, Metalsmith and assorted plugins.",
  "author": "Michael Kornblum",
- "email": "mkornblum71@bgmail.com"
+ "email": "mkornblum71@gmail.com"
 }
