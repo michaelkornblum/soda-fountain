@@ -20,7 +20,7 @@ In order to install Soda-Fountain you must have two packages already installed a
 - Node.js
 - Gulp
 
-**Warning:** Currently, Soda-Fountain does not run natively on Windows-based operating systems. I'm now the process of testing the project from within an instance of Vagrant running on Windows 10. I will keep you posted.
+**Warning:** Soda-Fountain is not supported on Windows.
 
 ### 1. Install Node.js
 For Mac users, installing Node.js is easy. Just go to the [Node.js website](https://nodejs.org/) and download the package that's appropriate to your operating system of choice. For Ubuntu users the latest version of Node.js is available via PPA. See [this article](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server) from Digital Ocean for details.
