@@ -3,6 +3,8 @@ var $m = require('load-metalsmith-plugins')();
 var assign = require('lodash.assign');
 var gulpsmith = require('gulpsmith');
 var moment = require('moment');
+var _ = require('lodash');
+var _s = require('underscore.string');
 
 module.exports = function(gulp, $g) {
   gulp.task('metalsmith', function() {
@@ -17,17 +19,40 @@ module.exports = function(gulp, $g) {
           pages: "data/pages.json"
         }))
         .use($m.markdown())
-        .use($m.inPlace({
-          engine: "jade"
+        .use($m.collections({
+          posts: {
+            pattern: 'posts/**.html',
+            sortBy: 'date',
+            reverse: true
+          }
         }))
-        .use($m.layouts({
+        .use($m.branch('posts/**.html')
+          .use($m.permalinks({
+            pattern: 'posts/:title',
+            relative: false
+          }))
+        )
+        .use($m.branch('!posts/**.html')
+          .use($m.branch('!index.md').use($m.permalinks({
+            relative: false
+          })))
+        )
+        .use($m.inPlace({
           engine: "jade",
-          moment: moment
+          moment: moment,
+          _: _,
+          _s: _s
         }))
         .use($m.copy({
           pattern: '**/*.jade',
           extension: '.html',
           move: true
+        }))
+        .use($m.layouts({
+          engine: "jade",
+          moment: moment,
+          _: _,
+          _s: _s
         }))
         .use($m.beautify())
       )

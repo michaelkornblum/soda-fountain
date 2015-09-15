@@ -3,11 +3,11 @@
   "pages" : [
     {
       "title" : "Home",
-      "href" : "index.html"
+      "href" : "/index.html"
     },
     {
       "title" : "About",
-      "href" : "about.html"
+      "href" : "/about.html"
     }
   ]
 }
