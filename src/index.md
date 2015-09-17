@@ -1,4 +1,4 @@
 ---
 title: Featured Post
-layout: featured.jade
+template: featured.jade
 ---

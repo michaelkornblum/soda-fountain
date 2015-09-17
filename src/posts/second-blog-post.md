@@ -4,7 +4,7 @@ description: second blog post
 author: Michael Kornblum
 category: bar
 date: 2015-06-13
-layout: default.jade
+template: default.jade
 ---
 
 this is my second post

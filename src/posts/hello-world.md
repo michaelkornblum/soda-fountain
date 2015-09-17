@@ -4,7 +4,7 @@ description: Review of the Light Table text editor
 author: Michael Kornblum
 category: foo
 date: 2014-11-13
-layout: default.jade
+template: default.jade
 ---
 
 this is my first post

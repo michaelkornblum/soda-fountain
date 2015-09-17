@@ -1,0 +1,15 @@
+extends default.jade
+block variables
+  - var post = collections.posts[0]
+  - var pageTitle = post.title
+  - var pageDescription = post.description
+  - var pageAuthor = post.author
+
+block content
+  h2=_s.titleize(post.title)
+  p #{post.description} by #[b=post.author] on #[b=moment(post.date).format("MMMM DD, YYYY")]
+  article!=collections.posts[0].contents
+
+
+  
+  

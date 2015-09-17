@@ -38,22 +38,11 @@ module.exports = function(gulp, $g) {
             relative: false
           })))
         )
-        .use($m.layouts({
+        .use($m.templates({
           engine: "jade",
           moment: moment,
           _: _,
           _s: _s
-        }))
-        .use($m.inPlace({
-          engine: "jade",
-          moment: moment,
-          _: _,
-          _s: _s
-        }))
-        .use($m.copy({
-          pattern: '**/*.jade',
-          extension: '.html',
-          move: true
         }))
         .use($m.beautify())
       )
