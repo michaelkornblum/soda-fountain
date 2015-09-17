@@ -1,8 +1,8 @@
 head
   meta(charset="utf-8")
-  title=site.title + " | " + pageTitle
+  title=_s.titleize(site.title) + " | " + _s.titleize(pageTitle)
   meta(name="description" content=pageDescription)
-  meta(name="author" content=pageAuthor)
+  meta(name="author" content=_s.titleize(pageAuthor))
   meta(name="viewport" content="width=device-width, initial-scale=1")
   link(rel="stylesheet" href="/styles/style.css")
   

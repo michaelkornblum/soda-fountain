@@ -1,6 +1,6 @@
 ---
-title: first post
-description: first blog post
+title: is Light Table the next Atom?
+description: Review of the Light Table text editor
 author: Michael Kornblum
 category: foo
 date: 2014-11-13

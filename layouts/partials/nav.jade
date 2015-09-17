@@ -1,7 +1,7 @@
 nav.main-nav(id="main-nav")
   ul
     for page in pages.pages
-      li #[a(href=page.href)=page.title]
+      li #[a(href=page.href)=_s.titleize(page.title)]
           
   include latest.jade
   include archives.jade

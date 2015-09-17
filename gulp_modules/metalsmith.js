@@ -20,12 +20,6 @@ module.exports = function(gulp, $g) {
           categories: "data/categories.json"
         }))
         .use($m.markdown())
-        .use($m.inPlace({
-          engine: "jade",
-          moment: moment,
-          _: _,
-          _s: _s
-        }))
         .use($m.collections({
           posts: {
             pattern: 'posts/**.html',
@@ -44,6 +38,12 @@ module.exports = function(gulp, $g) {
             relative: false
           })))
         )
+        .use($m.layouts({
+          engine: "jade",
+          moment: moment,
+          _: _,
+          _s: _s
+        }))
         .use($m.inPlace({
           engine: "jade",
           moment: moment,
@@ -54,12 +54,6 @@ module.exports = function(gulp, $g) {
           pattern: '**/*.jade',
           extension: '.html',
           move: true
-        }))
-        .use($m.layouts({
-          engine: "jade",
-          moment: moment,
-          _: _,
-          _s: _s
         }))
         .use($m.beautify())
       )

@@ -2,6 +2,7 @@ block variables
 - var pageTitle = title
 - var pageDescription = description
 - var pageAuthor = author
+- var post = collections.posts[0]
 
 doctype html
 html(lang="en")
@@ -12,8 +13,12 @@ html(lang="en")
       include partials/header.jade
       main
         block content
-          h2=_s.titleize(title)
-          article!=contents
+          h2=_s.titleize(post.title)
+          p #{post.description} by #[b=post.author]
+          article!=collections.posts[0].contents
     div.container
       include partials/footer.jade
     script(src="/scripts/script.js")
+
+  
+  

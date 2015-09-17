@@ -6,5 +6,5 @@ if postIndex > 5
   - postIndex = 5  
 ul
   while i < postIndex
-    li #[a(href='/' + posts[i].path)=moment(posts[i].date).format('MMMM DD, YYYY') + ': ' + posts[i].title]
+    li #[a(href='/' + posts[i].path)=moment(posts[i].date).format('MMMM DD, YYYY') + ': ' + _s.titleize(posts[i].title)]
     - i++

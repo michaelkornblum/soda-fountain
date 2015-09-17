@@ -4,8 +4,8 @@
 
 $min-font = 18px
 $max-font = 20px
-$line-height-ratio = 1.5
-$header-ratio = $golden
+$line-height-ratio = $major-sixth
+$header-ratio = $major-sixth
 $header-color = $white
 $body-font = $calibri
 $header-font = $calibri
@@ -17,7 +17,7 @@ $max-font = 18px
 typographic()
 
 body {
-  width 100%
+  lost-center 100%
 }
 
 header
@@ -38,3 +38,7 @@ main
   lost-column 65/100
   +below(900px)
     lost-column 3/3
+
+footer
+  lost-column 100/100
+  text-align center
