@@ -16,9 +16,16 @@ module.exports = function(gulp, $g) {
       .pipe(gulpsmith()
         .use($m.metadata({
           site: "data/site.json",
-          pages: "data/pages.json"
+          pages: "data/pages.json",
+          categories: "data/categories.json"
         }))
         .use($m.markdown())
+        .use($m.inPlace({
+          engine: "jade",
+          moment: moment,
+          _: _,
+          _s: _s
+        }))
         .use($m.collections({
           posts: {
             pattern: 'posts/**.html',

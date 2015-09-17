@@ -1,13 +1,10 @@
 nav.main-nav(id="main-nav")
   ul
-    for i in pages.pages
-      li
-        if i.title == title
-          a.active(href=i.href)=i.title
-        else
-          a(href=i.href)=i.title
+    for page in pages.pages
+      li #[a(href=page.href)=page.title]
           
-    
-      
-      
-    
+  include latest.jade
+  include archives.jade
+  include categories.jade
+  
+  

@@ -1,0 +1,16 @@
+{
+  "categories" : [
+    {
+      "title" : "foo",
+      "href" : "/foo.html"
+    },
+    {
+      "title" : "bar",
+      "href" : "/bar.html"
+    },
+    {
+      "title" : "baz",
+      "href" : "/baz.html"
+    }
+  ]
+}

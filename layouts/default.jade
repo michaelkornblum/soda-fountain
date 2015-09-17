@@ -1,9 +1,13 @@
+block variables
+  
 doctype html
 html(lang="en")
   include partials/head.jade
   body
     include partials/svg-symbols.svg
-    include partials/header.jade
-    main!=contents
-    include partials/footer.jade
+    div.container
+      include partials/header.jade
+      main!=contents
+    div.container
+      include partials/footer.jade
     script(src="/scripts/script.js")
