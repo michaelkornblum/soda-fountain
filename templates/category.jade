@@ -1,0 +1,14 @@
+extends default.jade
+block variables
+  - var pageTitle = "Category: " + _s.titleize(category) 
+  - var pageDescription = "all posts for " + category 
+  - var author = site.author
+  - var categoryEntries = _.filter(collections.posts, function(post){return post.category == category})
+  
+block content
+  h2=pageTitle
+  for entry in categoryEntries
+    h3 #[a(href='/' + entry.path) #{moment(entry.date).format("MMMM DD, YYYY")}: #{_s.titleize(entry.title)}]
+    p #{entry.description} by #[b=_s.titleize(entry.author)]
+    
+    

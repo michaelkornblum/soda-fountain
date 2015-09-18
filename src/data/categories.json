@@ -2,11 +2,11 @@
   "categories" : [
     {
       "title" : "foo",
-      "href" : "/foo.html"
+      "href" : "/foo/"
     },
     {
       "title" : "bar",
-      "href" : "/bar.html"
+      "href" : "/bar/"
     },
     {
       "title" : "baz",

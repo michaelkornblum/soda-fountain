@@ -1,41 +1,50 @@
-@lost gutter 1em
+@lost gutter 1em;
 @import 'typographic'
 @import 'rupture'
 
+
+$header-ratio = $perfect-fourth
+$line-height-ratio = 1.75
 $min-font = 18px
-$max-font = 20px
-$line-height-ratio = $major-sixth
-$header-ratio = $major-sixth
-$header-color = $white
-$body-font = $calibri
-$header-font = $calibri
-$header-font-weight = 100
-$min-font = 16px
-$max-font = 18px
-
-
+$max-font = 24px
+$body-font = $futura
+$header-font = $futura
 typographic()
 
 body {
   lost-center 100%
 }
 
-header
+header.page_header
   lost-column 35/100
   background: tomato
   color: white
   box-sizing border-box
-  padding-left: 1em;
+  padding: 0 1em
   +below(900px)
     lost-column 3/3
   li
     list-style-type none
+
+    width: 100%
+    display: block
   a
     text-decoration none
     color yellow
+    display block
+    width: 100
+  h1, h2, h3, h4
+    color: white
+
+  ul
+    width: 100%
+    margin-left: 0
+    padding-left: 0
 
 main
   lost-column 65/100
+  padding: 0 1em
+  box-sizing border-box
   +below(900px)
     lost-column 3/3
 

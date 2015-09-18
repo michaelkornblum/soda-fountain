@@ -4,6 +4,6 @@ module.exports = function(gulp, $g) {
       .pipe($g.svgSymbols({
         templates: ['default-svg']
       }))
-      .pipe(gulp.dest('./layouts/partials'));
+      .pipe(gulp.dest('./templates/partials'));
   });
 }

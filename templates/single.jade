@@ -1,0 +1,10 @@
+extends default.jade
+block variables
+  - var pageTitle = title
+  - var pageDescription = description
+  - var pageAuthor = author
+
+block content
+  h2=_s.titleize(title)
+  p #{description} by #[b=author] on #[b=moment(date).format("MMMM DD, YYYY")]
+  article!=contents
