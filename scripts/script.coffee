@@ -1,6 +1,5 @@
+toggleButton = document.getElementById 'toggle'
+navigation = document.getElementById 'page-nav'
 
-message = require('./module.coffee')
-$ = require('jquery')
-template = require('./templates/test.jade')
-
-console.log(message.sayHello())
+toggleButton.addEventListener 'click', ->
+  navigation.classList.toggle 'open'

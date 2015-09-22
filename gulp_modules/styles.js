@@ -3,6 +3,7 @@ var poststylus = require('poststylus');
 var typographic = require('typographic');
 var lost = require('lost');
 var rupture = require('rupture');
+var verticalRhythm = require('postcss-vertical-rhythm');
 
 module.exports = function(gulp, $g) {
   gulp.task('styles', function() {
@@ -13,7 +14,7 @@ module.exports = function(gulp, $g) {
         ]
       }))
       .pipe($g.postcss([
-        lost
+        lost(), verticalRhythm({rootsSelector: 'body'})
       ]))
       .pipe(gulp.dest('./build/styles'));
   });

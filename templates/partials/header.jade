@@ -1,3 +1,7 @@
-header.page_header
-  h1=_s.titleize(site.title)
+header.page-header(role="banner")
+  .container
+    h1=_s.titleize(site.title)
+    button#toggle.toggle #[span]
   include nav.jade
+
+  
