@@ -7,7 +7,7 @@ block variables
 
 block content
   h2=_s.titleize(post.title)
-  p #{post.description} by #[b=post.author] on #[b=moment(post.date).format("MMMM DD, YYYY")]
+  p #{post.description} by #[b=post.author] on #[b=moment(post.date).format("MMMM DD, YYYY")].
   article!=collections.posts[0].contents
 
 

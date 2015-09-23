@@ -7,6 +7,4 @@ date: 2014-11-13
 template: single.jade
 ---
 
-this is my first post
-
-groovy, isn't it?
+this is a test of the emergency blogcast system
