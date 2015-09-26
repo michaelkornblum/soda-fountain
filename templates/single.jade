@@ -6,5 +6,6 @@ block variables
 
 block content
   h2=_s.titleize(title)
-  p #{description} by #[b=author] on #[b=moment(date).format("MMMM DD, YYYY")]
+  img(src!="/images/" + leadImage alt=leadImageAlt)
+  p #{description} by #[b=author] on #[b=moment(date).format("MMMM DD, YYYY")].
   article!=contents

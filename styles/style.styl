@@ -1,15 +1,28 @@
-@lost gutter 1em;
+@lost gutter .5em;
 @import 'typographic'
 @import 'rupture'
 
 $header-ratio = $major-third
 $line-height-ratio = 1.75
-$header-font = $garamond
-$body-font = $garamond
+$header-font = $calibri
+$body-font = $calibri
 $min-font = 16px
 $max-font = 24px
 
 typographic()
+
+
+body
+  width 100%
+  lost-center 100%
+
+img
+  lost-center 100%
+  width 100%
+
+.article-header
+  margin-bottom vr-block(1.3)
+
 
 
 
@@ -17,14 +30,14 @@ typographic()
   lost-utility clearfix
 
 .page-header h1, main h2
-  +above(768px)
+  +above(725px)
     margin-top 16px
     padding-top 0
 
 .page-header
   lost-column 1/3
   box-sizing border-box
-  padding 0 .5em
+  padding 0 1em
   background-color tomato
   color white
   h1, h2, h3, h4
@@ -47,8 +60,13 @@ main
   lost-column 2/3
   box-sizing border-box
   padding 0 1em
+  background #eee
   +below(725px)
     lost-column 3/3
+    h2
+      margin-top vr-block(.25)
+
+
 
 .toggle
   height 1.5em
@@ -65,6 +83,8 @@ main
   border-bottom 3px solid white
   +above(725px)
     display none
+  &:focus
+    outline none
   span
     display block
     height 3px
@@ -83,8 +103,15 @@ main
       opacity 1
       max-height 3999px
 
-
-
-
 .page-footer
-  lost-column: 4/4
+  lost-column 1/1
+  background-color tomato
+  color white
+  text-align right
+  display block
+  height vr-block(1.5)
+  padding 0 1em
+  box-sizing border-box
+  small
+    display block
+    margin-top vr-block(.9)

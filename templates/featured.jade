@@ -6,9 +6,13 @@ block variables
   - var pageAuthor = post.author
 
 block content
-  h2=_s.titleize(post.title)
-  p #{post.description} by #[b=post.author] on #[b=moment(post.date).format("MMMM DD, YYYY")].
-  article!=collections.posts[0].contents
+  article 
+    header.article-header
+      h2=moment(post.date).format("MMM DD, YYYY") + ": " + _s.titleize(post.title)
+      if post.leadImage
+        img(src!="/images/" + post.leadImage alt=post.leadImageAlt)
+      p #{post.description} by #[b=post.author].
+    section!=collections.posts[0].contents
 
 
   
