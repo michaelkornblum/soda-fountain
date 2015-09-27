@@ -1,5 +1,5 @@
 ---
-title: a Look Inside my Toolbox
+title: Look Inside my Toolbox
 description: Web Development Tools I Love to Use
 author: Michael Kornblum
 category: general
