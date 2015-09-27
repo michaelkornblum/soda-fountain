@@ -3,13 +3,7 @@ var fs = require('fs');
 var gulp = require('gulp');
 var $g = require('gulp-load-plugins')();
 var browserSync = require('browser-sync').create();
-
-// bring in site deployment file
-try {
-  var config = JSON.parse(fs.readFileSync('./config.json'));
-} catch(err) {
-  var config = {};
-}
+var Ship = require('ship');
 
 // GULP TASKS
 // compile HTML with Metalsmith
@@ -36,14 +30,11 @@ require('./gulp_modules/start-server.js')(gulp, browserSync);
 // utilty task to watch files
 require('./gulp_modules/watch.js')(gulp, browserSync);
 
-// deploy to github pages
-require('./gulp_modules/deploy-git.js')(gulp, $g, config);
-
-// deploy ftp site
-require('./gulp_modules/deploy-ftp.js')(gulp, $g, config);
-
 // start development server
 require('./gulp_modules/serve.js')(gulp);
 
 // default build task
 require('./gulp_modules/default.js')(gulp);
+
+// ship to gh-pages
+require('./gulp_modules/ship.js')(gulp, Ship);
