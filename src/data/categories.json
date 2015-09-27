@@ -1,8 +1,8 @@
 {
   "categories" : [
     {
-      "title" : "foo",
-      "href" : "/foo/"
+      "title" : "general",
+      "href" : "/general/"
     },
     {
       "title" : "bar",

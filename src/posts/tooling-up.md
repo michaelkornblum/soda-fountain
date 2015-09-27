@@ -60,7 +60,6 @@ One big benefit of using Static Site Generators is that all the web server has t
 At the time of this writing, my static site generator of choice is Metalsmith. While its not as easy to learn as Jekyll or Roots, it does have a few advantages. First, it integrates smoothly with Gulp. Secondly, Metalsmith is modular in design which lets me add and remove components as needed. Finally, Metalsmith seems to have the best selection of plugins that I have seen in many applications of its class.
 
 ### Final Thoughts
-Over the past year, my web design toolbox has changed substancially. While a few tools have stayed on as semi-permanent fixtures, some of them have been used with less frequency. Additions to my toolbox, such as Stylus, PostCss and Metalsmith have exapnded my capabilities as a front-end developer, and tools like Gulp have proven themselves to be so useful that I was able to remove some tools from my workflow entirely.
+Over the past year, my web design toolbox has changed substancially. While a few tools have stayed on as semi-permanent fixtures, some of them have been used with less frequency. Additions to my toolbox, such as Stylus, PostCss and Metalsmith have exapnded my capabilities as a front-end developer, and tools like Gulp have proven themselves to be more useful than I originally thought possible.
 
-### Things to Think About
-What tools do you use in your workflow? Has your toolbox changed in recent months? Presently, do you find yourself using more tools than others? Discuss.
+I suspect that over the next year there will be more changes to my development workflow. Just as I become comfortable with one tool, a bigger and better replacement takes the stage. If and when this occurs I'll keep you posted.

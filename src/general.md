@@ -1,4 +1,4 @@
 ---
-category: foo
+category: general
 template: category.jade
 ---
