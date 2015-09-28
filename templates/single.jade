@@ -5,7 +5,10 @@ block variables
   - var pageAuthor = author
 
 block content
-  h2=_s.titleize(title)
-  img(src!="/images/" + leadImage alt=leadImageAlt)
-  p #{description} by #[b=author] on #[b=moment(date).format("MMMM DD, YYYY")].
-  article!=contents
+  article 
+    header.article-header
+      h2=moment(date).format("MMM DD, YYYY") + ": " + _s.titleize(title)
+      if leadImage
+        img(src!="/images/" + leadImage alt=leadImageAlt)
+      p #{description} by #[b=author].
+    section!=contents

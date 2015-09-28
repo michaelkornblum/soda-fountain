@@ -5,6 +5,8 @@ author: Michael Kornblum
 category: bar
 date: 2015-06-13
 template: single.jade
+leadImage: construction.jpg
+leadImageAlt: construction site
 ---
 
 this is my second post

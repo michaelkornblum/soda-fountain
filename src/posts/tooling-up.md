@@ -1,5 +1,5 @@
 ---
-title: Look Inside my Toolbox
+title: a Look Inside my Toolbox
 description: Web Development Tools I Love to Use
 author: Michael Kornblum
 category: general
@@ -58,6 +58,11 @@ Like Content Management Systems, Static Site Generators use dynamic content and 
 One big benefit of using Static Site Generators is that all the web server has to do is host HTML, CSS and JavaScript. There is no server side scripting languages or databases to worry about. This results in less security concerns and faster page loads.
 
 At the time of this writing, my static site generator of choice is Metalsmith. While its not as easy to learn as Jekyll or Roots, it does have a few advantages. First, it integrates smoothly with Gulp. Secondly, Metalsmith is modular in design which lets me add and remove components as needed. Finally, Metalsmith seems to have the best selection of plugins that I have seen in many applications of its class.
+
+### My Browsewrs & Testung Environment
+When designing responsive web sites you can never have enough browsers. On my Linux Desktop I have Chrome, Firefox and Opera installed. Addtionally, I use a tool called Browser-sync to test my work on various devices on my home wi-fi network. One thing I love about Browser-sync is that if I change something on my website, all the other devices on the network automatically reload to reflect this change. This frees me from having to constantly have to resize my browser window to check my work.
+
+Another tool I use regularly is Virtualbox, which allows me to run virtualized instances of various operating systems on my Linux desktop, which saves me from having to have more devices than needed. When configured correctly, Virtualbox works flawlessly with Browser-sync creating the perfect desktop testing environment.
 
 ### Final Thoughts
 Over the past year, my web design toolbox has changed substancially. While a few tools have stayed on as semi-permanent fixtures, some of them have been used with less frequency. Additions to my toolbox, such as Stylus, PostCss and Metalsmith have exapnded my capabilities as a front-end developer, and tools like Gulp have proven themselves to be more useful than I originally thought possible.

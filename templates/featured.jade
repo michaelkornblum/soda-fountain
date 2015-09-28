@@ -12,7 +12,7 @@ block content
       if post.leadImage
         img(src!="/images/" + post.leadImage alt=post.leadImageAlt)
       p #{post.description} by #[b=post.author].
-    section!=collections.posts[0].contents
+    section!=post.contents
 
 
   
