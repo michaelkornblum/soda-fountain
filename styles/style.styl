@@ -10,6 +10,7 @@ $min-font = 16px
 $max-font = 24px
 
 typographic()
+//grid-overlay(blue, 2)
 
 
 body
@@ -22,9 +23,9 @@ img
 
 
 
-article header
 
-  margin-bottom vr-block(1.35)
+article header
+  margin-bottom vr-block(.05)
 
 
 
@@ -66,8 +67,6 @@ main
   background #eee
   +below(725px)
     lost-column 3/3
-    h2
-      margin-top vr-block(.25)
 
 
 
@@ -112,6 +111,7 @@ main
   color white
   text-align right
   display block
+  margin-top vr-block(.25)
   height vr-block(1.5)
   padding 0 1em
   box-sizing border-box

@@ -2,14 +2,14 @@
 title: a Look Inside my Toolbox
 description: Web Development Tools I Love to Use
 author: Michael Kornblum
-category: general
+category: linux
 date: 2015-09-22
 template: single.jade
 leadImage: tools.jpg
 leadImageAlt: tools
 ---
 
-A couple of years ago, I wrote an article called *Tooling Up: My Web Design and Development Rig for Ubuntu 14.04.* Not a lot has changed in my current set up. Ubuntu continues to be my OS of choice and I still use GIMP and Inkscape for most of my graphic editing. But my old blog is no longer in existence, and nowadays there are enough changes to my workflow that I felt it was time to revisit this topic.
+A couple of years ago, I wrote an article called *Tooling Up: My Web Design and Development Rig for Ubuntu 14.04.* for a small blog called *Linux Web Journal*. Not a lot has changed in my current set up. Ubuntu continues to be my OS of choice and I still use GIMP and Inkscape for most of my graphic editing. But LWJ is no longer in existence, and nowadays there are enough changes to my workflow that I felt it was time to revisit this topic.
 
 ### My Desktop Environment: Gnome 3.16
 

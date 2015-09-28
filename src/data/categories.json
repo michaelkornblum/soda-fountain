@@ -1,16 +1,12 @@
 {
   "categories" : [
     {
-      "title" : "general",
-      "href" : "/general/"
+      "title" : "linux",
+      "href" : "/linux/"
     },
     {
-      "title" : "bar",
-      "href" : "/bar/"
-    },
-    {
-      "title" : "baz",
-      "href" : "/baz.html"
+      "title": "general",
+      "href": "/general/"
     }
   ]
 }

@@ -9,6 +9,7 @@ block content
     header.article-header
       h2=moment(date).format("MMM DD, YYYY") + ": " + _s.titleize(title)
       if leadImage
-        img(src!="/images/" + leadImage alt=leadImageAlt)
-      p #{description} by #[b=author].
+        figure
+          img(src!="/images/" + leadImage alt=leadImageAlt)
+          figcaption #{description} by #[b=author].
     section!=contents
