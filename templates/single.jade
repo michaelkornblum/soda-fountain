@@ -9,7 +9,11 @@ block content
     header.article-header
       h2=moment(date).format("MMM DD, YYYY") + ": " + _s.titleize(title)
       if leadImage
-        figure
-          img(src!="/images/" + leadImage alt=leadImageAlt)
-          figcaption #{description} by #[b=author].
+        img(src!="/images/" + leadImage alt=leadImageAlt)
+      p #{description} by #[b=author]
     section!=contents
+    section.comments
+      include partials/disqus.jade
+    
+      
+      

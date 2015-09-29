@@ -7,6 +7,7 @@ date: 2015-09-28
 template: single.jade
 leadImage: construction.jpg
 leadImageAlt: construction
+shortName: this-is-a-work-in-progress
 ---
 
 Greetings, salutations and welcome to my blog. My name is Michael Kornblum and in this blog I intend to share my thoughts, feelings and observations as the pertain to Linux, open source software, web design and front-end development.
