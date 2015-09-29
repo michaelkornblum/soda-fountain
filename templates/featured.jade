@@ -8,7 +8,7 @@ block variables
 block content
   article 
     header.article-header
-      h2=moment(post.date).format("MMM DD, YYYY") + ": " + _s.titleize(post.title)
+      a(href='/' + post.path) #[h2=moment(post.date).format("MMM DD, YYYY") + ": " + _s.titleize(post.title)]
       if post.leadImage
         img(src!="/images/" + post.leadImage alt=post.leadImageAlt)
       p #{post.description} by #[b=post.author].

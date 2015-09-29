@@ -29,7 +29,6 @@ First, by working out in the open, I'm taking the focus off myself and thinking 
 Now, what do I need to do before I call this blog a finished product?
 
 - Create an About page.
-- Add some kind of provision for reader comments.
 - Add contact information.
 - Create a finished Archive page.
 - Add SVGs to the navigation area.
