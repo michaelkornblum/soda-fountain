@@ -32,7 +32,6 @@ Now, what do I need to do before I call this blog a finished product?
 - Add contact information.
 - Create a finished Archive page.
 - Add SVGs to the navigation area.
-- Fix issuse with image aliasing.
 - Clean up CSS.
 
 For the time being, this is my "to do list." I suspect that as I complete one task, others will start to rear their heads. These in turn will also need to be documented and resolved. But for now, this is what I have.
