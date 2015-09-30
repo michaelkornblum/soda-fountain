@@ -28,7 +28,7 @@ node_modules
 
 # Build directory
 build
-svg-symbols.svg
+
 
 # Misc
 .DS_Store

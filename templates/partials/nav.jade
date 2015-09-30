@@ -1,8 +1,14 @@
 nav#page-nav.page-nav(role="navigation")
 
-  ul
+  ul.site-pages_list
     for page in pages.pages
-      li #[a(href=page.href)=_s.titleize(page.title)]
+      li 
+        a(href="#{page.href}")
+          svg.icon 
+            use(xlink:href="#" + page.icon)
+          = page.title
+    
+      
           
   include latest.jade
   include archives.jade

@@ -60,7 +60,7 @@ One big benefit of using Static Site Generators is that all the web server has t
 
 At the time of this writing, my static site generator of choice is Metalsmith. While its not as easy to learn as Jekyll or Roots, it does have a few advantages. First, it integrates smoothly with Gulp. Secondly, Metalsmith is modular in design which lets me add and remove components as needed. Finally, Metalsmith seems to have the best selection of plugins that I have seen in many applications of its class.
 
-### My Browsers & Testung Environment
+### My Browsers & Testing Environment
 When designing responsive web sites you can never have enough browsers. On my Linux Desktop I have Chrome, Firefox and Opera installed. Addtionally, I use a tool called Browser-sync to test my work on various devices on my home wi-fi network. One thing I love about Browser-sync is that if I change something on my website, all the other devices on the network automatically reload to reflect this change. This frees me from having to constantly have to resize my browser window to check my work.
 
 Another tool I use regularly is Virtualbox, which allows me to run virtualized instances of various operating systems on my Linux desktop, which saves me from having to have more devices than needed. When configured correctly, Virtualbox works flawlessly with Browser-sync creating the perfect desktop testing environment.

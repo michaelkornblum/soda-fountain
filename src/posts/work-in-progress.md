@@ -20,7 +20,7 @@ With this being said, I have a little confession to make. This is my first perso
 
 Imposter syndrome is not uncommon among those in skilled professions. I've written articles for LinkedIn, established a small presence on Github and even taught Responsive Web Design to others. But with each bit of knowledge that I shared, the nagging voice that cast doubt upon my own personal abilities grew louder and louder. Finally, something had to give.
 
-Recently, I asked myself if I still wanted to be a Web Designer or front-end developer, or if I was going to continue on as a hobbyist. If my passion was to become a career, I had to have a personal site online whether it was perfect of not. This meant that I had to check my neurosis and perfectionism at the door, and in the words of Chris Coyier "just build websites."
+Recently, I asked myself if I still wanted to be a web designer, front-end developer, or if I was going to continue on as a hobbyist. If my passion was to become a career, I had to have a personal site online whether it was perfect of not. This meant that I had to check my neurosis and perfectionism at the door, and in the words of Chris Coyier "just build websites."
 
 With this mantra firmly in mind, I build this blog from scratch using the Metalsmith static site generator, and the Gulp streaming build system. The original intention was to create something that was virtually indistinguishable from a WordPress theme, but could be easily hosted on Github pages. Thus far, I'm about three quarters of the way complete with the template. But I decided to go live with this project regardless of its level of completion for a couple of reasons.
 
@@ -32,7 +32,7 @@ Now, what do I need to do before I call this blog a finished product?
 - Add contact information.
 - Create a finished Archive page.
 - Add SVGs to the navigation area.
-- Clean up CSS.
+- Clean up the CSS.
 
 For the time being, this is my "to do list." I suspect that as I complete one task, others will start to rear their heads. These in turn will also need to be documented and resolved. But for now, this is what I have.
 

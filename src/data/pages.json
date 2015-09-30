@@ -3,11 +3,13 @@
   "pages" : [
     {
       "title" : "Home",
-      "href" : "/index.html"
+      "href" : "/index.html",
+      "icon" : "home78"
     },
     {
       "title" : "About",
-      "href" : "/about/"
+      "href" : "/about/",
+      "icon" : "info27"
     }
   ]
 }
