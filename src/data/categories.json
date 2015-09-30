@@ -1,12 +1,14 @@
 {
   "categories" : [
     {
-      "title" : "linux",
-      "href" : "/linux/"
+      "title" : "Linux",
+      "href" : "/linux/",
+      "icon" : "linux5"
     },
     {
-      "title": "general",
-      "href": "/general/"
+      "title": "General",
+      "href": "/general/",
+      "icon": "world91"
     }
   ]
 }

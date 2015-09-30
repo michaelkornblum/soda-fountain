@@ -1,11 +1,12 @@
 nav#page-nav.page-nav(role="navigation")
 
-  ul.site-pages_list
+  ul.site-pages
     for page in pages.pages
-      li 
+      li
         a(href="#{page.href}")
-          svg.icon 
-            use(xlink:href="#" + page.icon)
+          span
+            svg.icon 
+              use(xlink:href="#" + page.icon)
           = page.title
     
       

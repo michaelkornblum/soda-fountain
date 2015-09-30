@@ -1,4 +1,9 @@
 h3 Categories
-ul
+
+ul.site-categories
   for category in categories.categories
-    li #[a(href=category.href)=_s.titleize(category.title)]
+    li 
+      a(href="#{category.href}")
+        svg.icon 
+          use(xlink:href="#" + category.icon)
+        = category.title

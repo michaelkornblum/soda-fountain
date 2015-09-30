@@ -1,5 +1,10 @@
-toggleButton = document.getElementById 'toggle'
-navigation = document.getElementById 'page-nav'
+$ = require 'jquery'
 
-toggleButton.addEventListener 'click', ->
-  navigation.classList.toggle 'open'
+$('#toggle').on 'click', ->
+  $('#page-nav').toggleClass('open')
+
+$('.site-pages a').on 'mouseenter', ->
+  $(this).find('svg.icon').addClass('active')
+
+$('.site-pages a').on 'mouseleave', ->
+  $(this).find('svg.icon').removeClass('active')
