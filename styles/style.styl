@@ -2,7 +2,7 @@
 @import 'typographic'
 @import 'rupture'
 
-$header-ratio = $major-third
+$header-ratio = $minor-third
 $line-height-ratio = 1.75
 $header-font = $calibri
 $body-font = $calibri
@@ -35,7 +35,7 @@ article header
   lost-utility clearfix
 
 .page-header h1, main h2
-  +above(725px)
+  +above(700px)
     margin-top 16px
     padding-top 0
 
@@ -53,9 +53,9 @@ article header
     text-decoration none
     &:hover
       color white
-  +below(1000px)
+  +below(1048px)
     lost-column 1/3
-  +below(768px)
+  +below(725px)
     lost-column 3/3
     margin-top 0
     padding-top 0
@@ -68,9 +68,9 @@ main
   box-sizing border-box
   padding 0 1em
   background #eee
-  +below(1000px)
+  +below(1048px)
     lost-column 2/3
-  +below(768px)
+  +below(725px)
     lost-column 3/3
 
 
@@ -88,7 +88,7 @@ main
   border none
   border-top 3px solid white
   border-bottom 3px solid white
-  +above(768px)
+  +above(725px)
     display none
   &:focus
     outline none
@@ -99,7 +99,8 @@ main
     width 100%
 
 .page-nav
-  +below(768px)
+  +below(725px)
+
     opacity 0
     max-height 0
     overflow hidden
