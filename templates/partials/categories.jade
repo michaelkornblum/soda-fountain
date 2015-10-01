@@ -4,6 +4,7 @@ ul.site-categories
   for category in categories.categories
     li 
       a(href="#{category.href}")
-        svg.icon 
-          use(xlink:href="#" + category.icon)
-        = category.title
+        span
+          svg.icon 
+            use(xlink:href="#" + category.icon)
+          = category.title
