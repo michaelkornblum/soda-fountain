@@ -1,4 +1,4 @@
 ---
 category: bar
-template: category.jade
+layout: category.jade
 ---

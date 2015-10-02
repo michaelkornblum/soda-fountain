@@ -38,7 +38,7 @@ module.exports = function(gulp, $g) {
             relative: false
           })))
         )
-        .use($m.templates({
+        .use($m.layouts({
           engine: "jade",
           moment: moment,
           _: _,

@@ -4,7 +4,7 @@ description: Web Development Tools I Love to Use
 author: Michael Kornblum
 category: linux
 date: 2015-09-22
-template: single.jade
+layout: single.jade
 leadImage: tools.jpg
 leadImageAlt: tools
 shortName: a-look-inside-my-toolbox

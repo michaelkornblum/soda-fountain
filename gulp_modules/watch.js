@@ -1,7 +1,7 @@
 module.exports = function(gulp, browserSync) {
   gulp.task('watch', function() {
     gulp.watch('src/**/*', ['metalsmith']);
-    gulp.watch('templates/**/*', ['metalsmith']);
+    gulp.watch('layouts/**/*', ['metalsmith']);
     gulp.watch('src/**/*', ['metalsmith']);
     gulp.watch('styles/**/*', ['styles']);
     gulp.watch('scripts/**/*', ['scripts']);

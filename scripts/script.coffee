@@ -13,4 +13,4 @@ $('.site-categories li a').on 'mouseenter', ->
   $(this).find('svg').attr('class', 'icon active')
 
 $('.site-categories li a').on 'mouseleave', ->
-  $(this).find('svg.icon').attr('class', 'icon')
+  $(this).find('svg').attr('class', 'icon')

@@ -1,4 +1,4 @@
 ---
 category: linux
-template: category.jade
+layout: category.jade
 ---

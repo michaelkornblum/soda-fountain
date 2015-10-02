@@ -4,7 +4,7 @@ description: Things I need to do on this blog
 author: Michael Kornblum
 category: general
 date: 2015-09-28
-template: single.jade
+layout: single.jade
 leadImage: construction.jpg
 leadImageAlt: construction
 shortName: this-is-a-work-in-progress

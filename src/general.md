@@ -1,4 +1,4 @@
 ---
 category: general
-template: category.jade
+layout: category.jade
 ---
