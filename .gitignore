@@ -33,3 +33,4 @@ build
 # Misc
 .DS_Store
 .publish
+ship.conf
