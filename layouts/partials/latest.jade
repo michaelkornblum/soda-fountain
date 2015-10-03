@@ -1,5 +1,5 @@
 h2 Latest Posts
-- var posts = collections.posts
+- var posts = _.sortBy(collections.posts, 'date').reverse()
 - var i = 0
 - var postIndex = posts.length
 if postIndex > 5

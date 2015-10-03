@@ -2,6 +2,7 @@
 - var latestPostDate = moment(latestPost.date)
 - var latestPostYear = latestPostDate.year()
 - var latestPostMonth = latestPostDate.month()
+- var currentPostDate, currentPostYear, currentPostMonth
 
 h2=latestPostDate.format('MMMM YYYY')
 <ul>
@@ -11,8 +12,8 @@ for post in posts
   - var currentPostMonth = currentPostDate.month()
 
   if (currentPostMonth < latestPostMonth || currentPostYear < latestPostYear)
-    - currentPostMonth = latestPostMonth
-    - currentPostYear = latestPostYear
+    - latestPostMonth = currentPostMonth
+    - latestPostYear = currentPostYear
     </ul>
   
     h2=currentPostDate.format("MMMM YYYY")
