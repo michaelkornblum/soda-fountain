@@ -26,7 +26,7 @@
     "gulp-front-matter": "1.2.3",
     "gulp-imagemin": "2.3.0",
     "gulp-load-plugins": "1.0.0-rc.1",
-    "gulp-postcss": "6.0.0",
+    "gulp-postcss": "6.0.1",
     "gulp-streamify": "0.0.5",
     "gulp-stylus": "2.0.7",
     "gulp-svg-symbols": "0.3.2",
