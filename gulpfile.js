@@ -3,7 +3,6 @@ var fs = require('fs');
 var gulp = require('gulp');
 var $g = require('gulp-load-plugins')();
 var browserSync = require('browser-sync').create();
-var Ship = require('ship');
 
 // GULP TASKS
 // compile HTML with Metalsmith
@@ -35,6 +34,3 @@ require('./gulp_modules/serve.js')(gulp);
 
 // default build task
 require('./gulp_modules/default.js')(gulp);
-
-// ship to gh-pages
-require('./gulp_modules/ship.js')(gulp, Ship);

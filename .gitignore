@@ -32,5 +32,4 @@ build
 
 # Misc
 .DS_Store
-gh-pages.json
 .publish
