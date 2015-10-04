@@ -10,6 +10,11 @@
       "title": "General",
       "href": "/general/",
       "icon": "world91"
+    },
+    {
+      "title": "Front-end development",
+      "href": "/front-end-development/",
+      "icon": "web-programming"
     }
   ]
 }
