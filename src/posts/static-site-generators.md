@@ -14,10 +14,10 @@ I first heard about static site generators about two years ago while listening t
 
 Coming from a PHP background, this idea intrigued me. I had already started working with the [Smarty templating engine](http://www.smarty.net/) and enjoyed the fact that I was no longer polluting my server-side code with fragments of HTML. But the idea of compiling my data and templates into a flat file was something I never really considered.
 
-After trying Jekyll for the first time, I was hooked on the idea of static site generators. While I could not see this way of building websites as a replacement for full Content Management Systems, I was blown away by just how much server-side code could be eliminated by just using templates.
+After trying Jekyll for the first time, I was hooked. While I could not see static site generators as a replacement for WordPress and other content management systems, I was blown away by just how much server-side code could be eliminated by just using templates.
 
 ### What is a Static Site Generator?
-A Static Site Generator can be described as a Content Management System that does not use a server-side scripting language or a database. Page layouts and site content are stored as files in a project directory. These files are then compiled prior to publication via command-line to create a complete website.
+A static site generator can be described as a content management system that does not use a server-side scripting language or a database. Page layouts and site content are stored as files in a project directory. These files are then compiled prior to publication via command-line to create a complete website.
 
 ### the Advantages
 Most of the advantages of using a static site generator comes from the fact that the websites they build consist of nothing more than HTML, CSS and JavaScript. As a result:
