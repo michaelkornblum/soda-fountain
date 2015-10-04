@@ -10,7 +10,7 @@ block content
       h2=moment(date).format("MMM DD, YYYY") + ": " + _s.titleize(title)
       if leadImage
         img(src!="/images/" + leadImage alt=leadImageAlt)
-      p #{description} by #[b=author]
+      p #{description} by #[b=author].
     section!=contents
     section.comments
       include partials/disqus.jade
