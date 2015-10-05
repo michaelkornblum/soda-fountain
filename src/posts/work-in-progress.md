@@ -22,9 +22,9 @@ Imposter syndrome is not uncommon among those in skilled professions. I've writt
 
 Recently, I asked myself if I still wanted to be a web designer, front-end developer, or if I was going to continue on as a hobbyist. If my passion was to become a career, I had to have a personal site online whether it was perfect of not. This meant that I had to check my neurosis and perfectionism at the door, and in the words of Chris Coyier "just build websites."
 
-With this mantra firmly in mind, I build this blog from scratch using the Metalsmith static site generator, and the Gulp streaming build system. The original intention was to create something that was virtually indistinguishable from a WordPress theme, but could be easily hosted on Github pages. Thus far, I'm about three quarters of the way complete with the template. But I decided to go live with this project regardless of its level of completion for a couple of reasons.
+With this mantra firmly in mind, I built this blog from scratch using the Metalsmith static site generator, and the Gulp streaming build system. The original intention was to create something that was virtually indistinguishable from a WordPress theme, but could be easily hosted on Github pages. Thus far, I'm about nine tenths of the way complete with the template. But I decided to go live with this project regardless of its level of completion for a couple of reasons.
 
-First, by working out in the open, I'm taking the focus off myself and thinking of those who are actually visiting my site. Secondly, by chronicling the lessons I learn while finishing this blog, I can hopefully help others.
+First, by working out in the open, I'm taking the focus off myself and thinking of those who are actually visiting my site. Secondly, by chronicling the lessons I learn while finishing this blog, I can hopefully help others who are facing the same issues as myself.
 
 Now, what do I need to do before I call this blog a finished product?
 
