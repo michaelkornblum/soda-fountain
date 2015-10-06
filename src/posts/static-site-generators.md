@@ -5,8 +5,8 @@ author: Michael Kornblum
 category: front-end development
 date: 2015-10-04
 layout: single.jade
-leadImage: power_plant.jpg
-leadImageAlt: power plant
+leadImage: steampunk.jpg
+leadImageAlt: steampunk computer
 shortName: static-site-generators-a-first-look
 ---
 
