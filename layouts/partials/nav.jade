@@ -1,5 +1,8 @@
-nav#page-nav.page-nav(role="navigation")
-
+nav#site-nav.site-nav(role="navigation")
+  header
+    h1 Site Menu 
+    svg.toggle
+      use(xlink:href="#close6")
   ul.site-pages
     for page in pages.pages
       li
@@ -8,9 +11,7 @@ nav#page-nav.page-nav(role="navigation")
             svg.icon 
               use(xlink:href="#" + page.icon)
           = page.title
-    
-      
-          
+                  
   include latest.jade
   include archives.jade
   include categories.jade

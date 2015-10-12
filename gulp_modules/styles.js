@@ -3,6 +3,8 @@ var poststylus = require('poststylus');
 var typographic = require('typographic');
 var lost = require('lost');
 var rupture = require('rupture');
+var autoprefixer = require('autoprefixer');
+var cssnano = require('cssnano');
 
 module.exports = function(gulp, $g) {
   gulp.task('styles', function() {
@@ -13,7 +15,7 @@ module.exports = function(gulp, $g) {
         ]
       }))
       .pipe($g.postcss([
-        lost()
+        lost(), autoprefixer(), cssnano()
       ]))
       .pipe(gulp.dest('./build/styles'));
   });

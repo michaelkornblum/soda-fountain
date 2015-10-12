@@ -8,14 +8,14 @@ html(lang="en")
   include partials/head.jade
   body
     include partials/svg-symbols.svg
-    .container
-      include partials/header.jade
-      main
-        block content
-          article
-            header
-              h2=_s.titleize(title)
-            section=contents
+    include partials/header.jade
+    include partials/nav.jade
+    main
+      block content
+        article
+          header
+            h2=_s.titleize(title)
+          section=contents
     .container
       include partials/footer.jade
     script(src="/scripts/script.js")

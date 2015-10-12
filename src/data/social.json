@@ -1,0 +1,30 @@
+{
+  "links" : [
+    {
+      "title" : "Facebook",
+      "href" : "https://facebook.com/",
+      "icon" : "facebook2"
+    },
+    {
+      "title" : "Twitter",
+      "href" : "https://twitter.com/",
+      "icon" : "twitter"
+    },
+    {
+      "title" : "LinkedIn",
+      "href" : "https://linkedin.com",
+      "icon" : "linkedin12"
+    },
+    {
+      "title" : "Github",
+      "href" : "https:github.com",
+      "icon" : "github5"
+    },
+    {
+      "title" : "Email",
+      "href" : "mkornblum71@gmail.com",
+      "icon": "email5"
+
+    }
+  ]
+}

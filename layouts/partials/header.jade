@@ -1,7 +1,14 @@
-header.page-header(role="banner")
-  .container
-    h1=_s.titleize(site.title)
-    button#toggle.toggle #[span]
-  include nav.jade
+header.site-header.container(role="banner")
+  a(href="#" title="site-menu")
+    svg.toggle(role="button")
+      use(xlink:href="#menu30")
+  h1=_s.titleize(site.title)
+  
+  ul
+    for link in social.links
+      li.social-link
+        a(href=link.href title=link.title)
+          svg
+            use(xlink:href="#" + link.icon)
 
   

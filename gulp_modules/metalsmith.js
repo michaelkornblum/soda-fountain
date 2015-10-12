@@ -17,7 +17,8 @@ module.exports = function(gulp, $g) {
         .use($m.metadata({
           site: "data/site.json",
           pages: "data/pages.json",
-          categories: "data/categories.json"
+          categories: "data/categories.json",
+          social: "data/social.json"
         }))
         .use($m.markdown())
         .use($m.collections({

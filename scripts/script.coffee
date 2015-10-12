@@ -1,7 +1,7 @@
 $ = require 'jquery'
 
-$('#toggle').on 'click', ->
-  $('#page-nav').toggleClass('open')
+$('.toggle').on 'click', ->
+  $('.site-nav').toggleClass('is-opened')
 
 $('.site-pages li a').on 'mouseenter', ->
   $(this).find('svg').attr('class', 'icon active')

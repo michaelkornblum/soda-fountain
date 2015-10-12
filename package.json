@@ -21,6 +21,7 @@
     "browser-sync": "2.9.11",
     "browserify": "11.2.0",
     "coffeeify": "1.1.0",
+    "cssnano": "^3.3.1",
     "del": "2.0.2",
     "gulp": "3.9.0",
     "gulp-front-matter": "1.2.3",

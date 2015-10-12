@@ -1,10 +1,10 @@
-h2 Categories
+h3 Categories
 
-ul.site-categories
+ul
   for category in categories.categories
     li 
       a(href="#{category.href}")
         span
-          svg.icon 
+          svg
             use(xlink:href="#" + category.icon)
           = category.title
