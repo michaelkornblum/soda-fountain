@@ -5,9 +5,48 @@
 @require 'header'
 @require 'nav'
 
-$header-ratio = $minor-third
+$header-ratio = $major-second
+$line-height-ratio = 1.6
 $min-font = 16px
-$max-font = 20px
+$max-font = 24px
 
 typographic()
 @require 'base'
+@require 'header'
+@require 'nav'
+
+article
+  header
+    margin-top 0
+    padding top
+    height 100vh
+    width 100vw
+    background position 50% 50%
+    background-size cover
+    background-repeat no-repeat
+    position relative
+    top -3.25em
+    .text
+      h2
+        font-size 2em
+        color white
+        line-height 1.2
+      color white
+      width 75%
+      margin 0 auto
+      position relative
+      text-align center
+      top 25%
+      tranform translateY(-25%)
+      p
+        font-size: 1.25em
+        line-height 1.6
+  section
+    margin 0 auto
+    padding 0
+    position relative
+    top -5em
+    width 75%
+    h1
+      font-size 1.75em
+      line-height 1.4

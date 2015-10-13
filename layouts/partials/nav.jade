@@ -1,19 +1,20 @@
 nav#site-nav.site-nav(role="navigation")
   header
-    h1 Site Menu 
+    h2 Site Menu 
     svg.toggle
-      use(xlink:href="#close6")
-  ul.site-pages
-    for page in pages.pages
-      li
-        a(href="#{page.href}")
-          span
-            svg.icon 
-              use(xlink:href="#" + page.icon)
-          = page.title
-                  
-  include latest.jade
-  include archives.jade
-  include categories.jade
+      use(xlink:href="#close40")
+  div 
+    ul.site-pages
+      for page in pages.pages
+        li
+          a(href="#{page.href}")
+            span
+              svg.icon 
+                use(xlink:href="#" + page.icon)
+            = page.title
+                    
+    include latest.jade
+    //include archives.jade
+    include categories.jade
 
   

@@ -8,8 +8,19 @@
     },
     {
       "title" : "About",
-      "href" : "/about/",
-      "icon" : "info27"
+      "href" : "/index.html#about"
+    },
+    {
+      "title" : "Projects",
+      "href" : "/index.html#work"
+    },
+    {
+      "title" : "Blog",
+      "href" : "#"
+    },
+    {
+      "title" : "Contact",
+      "href" : "/index.html#contact"
     }
   ]
 }

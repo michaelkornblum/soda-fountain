@@ -1,10 +1,10 @@
-h2 Latest Posts
+h3 Latest Posts
 - var posts = _.sortBy(collections.posts, 'date').reverse()
 - var i = 0
 - var postIndex = posts.length
 if postIndex > 5
   - postIndex = 5  
-ul
+ul.site-latest
   while i < postIndex
     li #[a(href='/' + posts[i].path)=moment(posts[i].date).format('MMMM DD, YYYY') + ': ' + _s.titleize(posts[i].title)]
     - i++

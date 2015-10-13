@@ -4,7 +4,9 @@
 - var latestPostMonth = latestPostDate.month()
 - var currentPostDate, currentPostYear, currentPostMonth
 
-h3=latestPostDate.format('MMMM YYYY')
+h3 Blog Archives
+
+h4=latestPostDate.format('MMMM YYYY')
 <ul>
 for post in posts
   - var currentPostDate = moment(post.date)
@@ -16,7 +18,7 @@ for post in posts
     - latestPostYear = currentPostYear
     </ul>
   
-    h3=currentPostDate.format("MMMM YYYY")
+    h4=currentPostDate.format("MMMM YYYY")
     <ul>
   li #[a(href='/' + post.path)=moment(post.date).format("MMMM DD") + ": " + _s.titleize(post.title)]
 </ul>
