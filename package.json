@@ -38,7 +38,7 @@
     "jade": "1.11.0",
     "jadeify": "4.4.0",
     "jquery": "2.1.4",
-    "jsonfile": "^2.2.2",
+    "jsonfile": "^2.2.3",
     "load-metalsmith-plugins": "0.1.1",
     "lodash": "3.10.1",
     "lodash.assign": "3.2.0",
