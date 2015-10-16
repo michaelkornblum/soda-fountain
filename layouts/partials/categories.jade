@@ -1,10 +1,14 @@
-h3 Categories
+section.categories
+  
+  h3(role="button") Categories
+    svg.list-toggle
+      use(xlink:href="#add13")
 
-ul.site-categories
-  for category in categories.categories
-    li 
-      a(href="#{category.href}")
-        span
-          svg.icon
-            use(xlink:href="#" + category.icon)
-          = category.title
+  ul.category-links
+    for category in categories.categories
+      li 
+        a(href="#{category.href}")
+          span
+            svg.icon
+              use(xlink:href="#" + category.icon)
+            = category.title

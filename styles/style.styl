@@ -7,8 +7,8 @@
 
 $header-ratio = $major-second
 $line-height-ratio = 1.6
-$min-font = 16px
-$max-font = 24px
+$min-font = 18px
+$max-font = 20px
 
 typographic()
 @require 'base'
@@ -16,16 +16,18 @@ typographic()
 @require 'nav'
 
 article
+  font-size 1.25
   header
     margin-top 0
     padding top
     height 100vh
     width 100vw
-    background position 50% 50%
+    background-position center center
     background-size cover
     background-repeat no-repeat
-    position relative
-    top -3.25em
+    margin-top -3.25em
+    margin-bottom vr-block(4)
+    padding 0
     .text
       h2
         font-size 2em
@@ -42,11 +44,13 @@ article
         font-size: 1.25em
         line-height 1.6
   section
+    font-size 1em
     margin 0 auto
     padding 0
     position relative
-    top -5em
-    width 75%
-    h1
-      font-size 1.75em
-      line-height 1.4
+    top -4em
+    width 95%
+    max-width 900px
+    h2
+      font-size 1.5em
+      line-height 1.25em

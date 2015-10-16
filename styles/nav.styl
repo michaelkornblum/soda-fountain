@@ -2,7 +2,7 @@
   background-color: #333
   box-sizing: border-box
   width: 100
-  max-width 400px
+  max-width 360px
   min-height 100%
   position: absolute
   top: 0
@@ -40,23 +40,54 @@
     padding 0 1em
     h1, h2, h3, h4, li, a
       color: white
-    .site-pages, .site-categories
+      font-size .95em
+    .site-pages, .category-links
       padding 0
       list-style-type none
       .icon
         position relative
-        top .1em
+        top .25em
         height 1.5em
         width 1.5em
         &.active
           fill orange
           stroke orange
-  .site-latest li
+  .latest-links li, category-links li
     margin-bottom: vr-block(.5)
-  .site-categories
+  .category-links
     position relative
     top -1em
   a
     text-decoration none
     &:hover
       color: orange
+  .list-toggle
+    height: 1.5em
+    width: 1.5em
+    position: relative
+    top: .375em
+    left: .5em
+    &.highlight
+      fill: orange
+      stroke: orange
+  .latest h3, .categories h3
+    &:hover
+      color: orange
+      cursor: pointer
+  .category-links, .latest-links
+    opacity 0
+    max-height 0
+    overflow hidden
+    transition all 0.6s ease
+    &.open
+      opacity 1
+      max-height 1000px
+  .categories, .latest
+    position relative
+    top -1em
+    marging 0 .5em
+  .categories
+    h3
+      margin-bottom 1em
+    position relative
+    top -3.5em

@@ -1,10 +1,14 @@
-h3 Latest Posts
-- var posts = _.sortBy(collections.posts, 'date').reverse()
-- var i = 0
-- var postIndex = posts.length
-if postIndex > 5
-  - postIndex = 5  
-ul.site-latest
-  while i < postIndex
-    li #[a(href='/' + posts[i].path)=moment(posts[i].date).format('MMMM DD, YYYY') + ': ' + _s.titleize(posts[i].title)]
-    - i++
+section.latest
+  h3(role="button") Latest Posts
+    svg.list-toggle
+      use(xlink:href="#add13")
+
+  - var posts = _.sortBy(collections.posts, 'date').reverse()
+  - var i = 0
+  - var postIndex = posts.length
+  if postIndex > 5
+    - postIndex = 5  
+  ul.latest-links
+    while i < postIndex
+      li #[a(href='/' + posts[i].path)=moment(posts[i].date).format('MMMM DD, YYYY') + ': ' + _s.titleize(posts[i].title)]
+      - i++
