@@ -31,7 +31,7 @@
     "gulp-stylus": "2.1.0",
     "gulp-svg-symbols": "0.3.2",
     "gulp-uglify": "1.4.2",
-    "gulp-util": "3.0.6",
+    "gulp-util": "3.0.7",
     "gulpsmith": "0.5.5",
     "harmonize": "1.4.4",
     "inquirer": "0.9.0",
