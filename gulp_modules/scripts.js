@@ -1,6 +1,6 @@
 var browserify = require('browserify');
 var transform = require('vinyl-transform');
-var jadeify = require('jadeify');
+var jadeify = require('browserify-jade');
 var coffeeify = require('coffeeify');
 var source = require('vinyl-source-stream')
 

@@ -1,4 +1,10 @@
 $ = require 'jquery'
+tmpl = require './templates/test.jade'
+
+console.log tmpl
+  name: 'Michael Kornblum'
+
+
 
 $('#toggle').on 'click', ->
   $('#page-nav').toggleClass('open')
