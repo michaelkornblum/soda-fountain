@@ -36,7 +36,7 @@
     "gulp-util": "3.0.7",
     "gulpsmith": "0.5.5",
     "harmonize": "1.4.4",
-    "inquirer": "0.11.0",
+    "inquirer": "0.11.4",
     "jade": "1.11.0",
     "jquery": "2.2.0",
     "jsonfile": "^2.2.3",
