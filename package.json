@@ -23,7 +23,7 @@
     "browserify-jade": "^1.0.2",
     "coffeeify": "2.0.1",
     "del": "2.2.0",
-    "gulp": "3.9.0",
+    "gulp": "3.9.1",
     "gulp-front-matter": "1.3.0",
     "gulp-imagemin": "2.3.0",
     "gulp-load-plugins": "1.2.0",
