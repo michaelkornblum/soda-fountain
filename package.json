@@ -61,7 +61,7 @@
     "rupture": "0.6.1",
     "stream-browserify": "2.0.1",
     "typographic": "^2.9.3",
-    "underscore.string": "3.2.3",
+    "underscore.string": "3.3.0",
     "vinyl-ftp": "0.4.5",
     "vinyl-source-stream": "1.1.0",
     "vinyl-transform": "1.0.0"
