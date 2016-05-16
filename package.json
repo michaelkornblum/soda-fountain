@@ -57,7 +57,7 @@
     "postcss": "5.0.12",
     "postcss-position": "^0.4.0",
     "poststylus": "0.2.2",
-    "run-sequence": "^1.1.4",
+    "run-sequence": "^1.2.0",
     "rupture": "0.6.1",
     "stream-browserify": "2.0.1",
     "typographic": "^2.9.3",
