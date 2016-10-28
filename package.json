@@ -44,7 +44,7 @@
     "lodash": "4.0.0",
     "lodash.assign": "4.0.1",
     "lost": "6.7.1",
-    "metalsmith": "2.1.0",
+    "metalsmith": "2.3.0",
     "metalsmith-beautify": "0.0.7",
     "metalsmith-branch": "0.0.4",
     "metalsmith-collections": "0.7.0",
