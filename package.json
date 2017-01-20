@@ -54,7 +54,7 @@
     "metalsmith-metadata": "0.0.4",
     "metalsmith-permalinks": "0.4.1",
     "moment": "2.11.1",
-    "postcss": "5.0.12",
+    "postcss": "5.2.11",
     "postcss-position": "^0.4.0",
     "poststylus": "0.2.2",
     "run-sequence": "^1.1.4",
