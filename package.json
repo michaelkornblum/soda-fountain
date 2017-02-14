@@ -19,7 +19,7 @@
   "devDependencies": {
     "autoprefixer": "6.3.1",
     "browser-sync": "2.10.0",
-    "browserify": "12.0.2",
+    "browserify": "14.1.0",
     "browserify-jade": "^1.0.2",
     "coffeeify": "2.0.1",
     "del": "2.2.0",
